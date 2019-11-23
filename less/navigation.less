@@ -2,7 +2,17 @@
 nav {
     .flex-column();
     .flex-center();
-    padding: 10px;
+   
+    @media @desktop {
+    padding: 20px;
+    margin: 0 auto;
+
+    }
+
+    @media @phone {
+        padding: 30px;
+         
+        }
 
     h1 {
         font-size: 4.5rem;
@@ -20,5 +30,7 @@ nav {
             font-size: 2rem;
         }
     }
+
+
 
 }
