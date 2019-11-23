@@ -1,43 +1,64 @@
 // Home Content
 
 .home {
+ 
 
   .intro {
-
+    padding: 10px 0;
     h2 {
       padding: 15px;
     }
-
     p {
       padding:0 15px;
     }
-  
-  }
+  } // intro
 
-  .space-images {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+  .space-images {     
+    @media @phone {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      margin: 0 auto;
+      width: 100%;
+      padding: 10px 0;
+      .sky, .launch {
+        display: none;
+      } 
+    }
+    @media @desktop {
+      display: flex;
+      flex-flow: row nowrap;
+    }
+  }//space images
 
     img {
-      width: 28%;
-      margin: 20px 2.5%;
+      margin: 0 auto;
       border-radius: 20px;
       height: 100%;
-    }
-  }
+      @media @phone {
+      display: flex;
+      justify-content: center;
+      width: 75%;
+      padding-bottom: 10px;           
+      }
+      @media @desktop {
+      width: 28%;
+      margin: 20px 2.5%;
+      }
+    }  //img
 
   .visit-planets {
-    padding: 15px;
-
+    
+    width: 90%;
     h3 {
-      margin-top: 11px;
+      padding: 12px;
     }
 
-    p {
-      margin-top: 13px;
-    }
-  }
+     p {
+       padding: 12px;
+     }
+     
+  } //visit planets
 
   .walk {
     margin-top: 60px;
@@ -45,9 +66,18 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
-
-    .walk-text {
-      width: 50%;
+      @media @phone {
+        display: flex;
+        flex-flow: column-reverse nowrap;
+      }
+      @media @desktop {
+        display: flex;
+        flex-flow: row wrap;
+      }
+  } //walk
+    
+  .walk-text {
+      width: 95%;
 
       h3 {
         margin-bottom: 10px;
@@ -58,18 +88,37 @@
       }
 
       .btn {
+        background-color: @btn-bg-color;
+        padding: 15px;
+        border-radius: 8px;
+        color: white;
+        font-weight: bold;
+        text-align: center;
       }
-    }
+  } //walk text
 
-    .walk-img {
-      width: 46%;
+  .walk-img {
+      @media @phone {
+      width: 75%;
       margin-left: 4%;
-      
+
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+        }
       }
-    }
-  }
-}// home
+      @media @desktop {
+        width: 46%;
+        margin-left: 4%;
+        img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        }
+      }
+  }// walk img
+} //home
+  
+
+ 

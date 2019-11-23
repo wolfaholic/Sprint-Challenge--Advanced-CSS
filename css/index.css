@@ -1,0 +1,332 @@
+.flex-row {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.flex-column {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.flex-center {
+  justify-content: center;
+  align-content: center;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #5E6164;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+nav {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-content: center;
+}
+@media (min-width: 800px) {
+  nav {
+    padding: 20px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 500px) and (max-width: 767px) {
+  nav {
+    padding: 30px;
+  }
+}
+nav h1 {
+  font-size: 4.5rem;
+  margin: 0 auto;
+  padding-bottom: 15px;
+}
+nav .nav-links {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 0 auto;
+}
+nav .nav-links a {
+  text-decoration: none;
+  color: #23293B;
+  padding-right: 20px;
+  font-size: 2rem;
+}
+footer {
+  color: #22283B;
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .intro {
+  padding: 10px 0;
+}
+.home .intro h2 {
+  padding: 15px;
+}
+.home .intro p {
+  padding: 0 15px;
+}
+@media (min-width: 500px) and (max-width: 767px) {
+  .home .space-images {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px 0;
+  }
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
+}
+@media (min-width: 800px) {
+  .home .space-images {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+}
+.home img {
+  margin: 0 auto;
+  border-radius: 20px;
+  height: 100%;
+}
+@media (min-width: 500px) and (max-width: 767px) {
+  .home img {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    padding-bottom: 10px;
+  }
+}
+@media (min-width: 800px) {
+  .home img {
+    width: 28%;
+    margin: 20px 2.5%;
+  }
+}
+.home .visit-planets {
+  width: 90%;
+}
+.home .visit-planets h3 {
+  padding: 12px;
+}
+.home .visit-planets p {
+  padding: 12px;
+}
+.home .walk {
+  margin-top: 60px;
+  border-top: 1px solid #dee2e6;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 500px) and (max-width: 767px) {
+  .home .walk {
+    display: flex;
+    flex-flow: column-reverse nowrap;
+  }
+}
+@media (min-width: 800px) {
+  .home .walk {
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
+.home .walk-text {
+  width: 95%;
+}
+.home .walk-text h3 {
+  margin-bottom: 10px;
+}
+.home .walk-text p {
+  margin-bottom: 26px;
+}
+.home .walk-text .btn {
+  background-color: #22283A;
+  padding: 15px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+@media (min-width: 500px) and (max-width: 767px) {
+  .home .walk-img {
+    width: 75%;
+    margin-left: 4%;
+  }
+  .home .walk-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+}
+@media (min-width: 800px) {
+  .home .walk-img {
+    width: 46%;
+    margin-left: 4%;
+  }
+  .home .walk-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+}
